@@ -1,0 +1,25 @@
+body {
+    background-color: #FFFFFF;
+    padding: 0 17%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+@media(max-width:1000px) {
+    body {
+        padding: 0 13%;
+    }
+}
+
+@media(max-width:500px) {
+    body {
+        padding: 0 10%;
+    }
+}

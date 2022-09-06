@@ -1,0 +1,211 @@
+.form-main {
+    width: 83%;
+    height: 590px;
+    margin: 110px auto 0;
+    background-color: #FFFBED;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 70px;
+    padding-left: 9%;
+    align-items: center;
+}
+
+.form-img {
+    background-image: url("../../img/pattern.svg");
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background-position: top;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    width: 30%;
+    height: 100%;
+}
+
+.form {
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form h2 {
+    font-size: 20px;
+    font-family: "Roboto-black";
+    margin-bottom: 30px;
+}
+
+.form-link {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-link p {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #94C6C4;
+    font-size: 16px;
+    font-family: "Raleway-medium";
+    transition: .4s;
+    cursor: pointer;
+}
+
+.form-link p:hover {
+    border-bottom-color: #236967;
+}
+
+.form-language {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.form-radio {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-radio label {
+    font-family: "Raleway-light";
+    font-size: 13px;
+}
+
+.radio-div input {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.input-div {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-div input {
+    width: 45%;
+}
+
+.input-class {
+    height: 30px;
+    border: 1px solid #FFECA0;
+    border-radius: 7px;
+    font-family: "Raleway-light";
+    font-size: 14px;
+}
+
+.email-div {
+    display: flex;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.email-input {
+    width: 100%;
+}
+
+.form-button {
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+    font-size: 16px;
+    font-family: "Raleway-semibold";
+    color: #fff;
+    background-color: #236967;
+    padding: 16px 32px;
+    border-radius: 30px;
+    border: 1px solid #236967;
+    transition: .4s;
+}
+
+.form-button:hover {
+    background-color: #fff;
+    color: #236967;
+}
+
+.form-img--bot {
+    display: none;
+}
+
+@media(max-width:923px) {
+    .form-main {
+        height: 500px;
+    }
+
+    .form-button {
+        bottom: 10%;
+    }
+}
+
+@media(max-width:776px) {
+    .form-main {
+        width: 100%;
+    }
+}
+
+@media(max-width:650px) {
+    .form-img {
+        display: none;
+    }
+    
+    .form-main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+
+    .form {
+        margin: 30px auto 0;
+        height: 350px;
+    }
+
+    .form h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .form-link p {
+        font-size: 14px;
+    }
+
+    .form-img--bot {
+        display: block;
+        background-image: url("../../img/pattern2.svg");
+        width: 100%;
+        height: 20%;
+        background-size: cover;
+        background-repeat: repeat-y;
+        border-radius: 0 0 70px 70px;
+    }
+
+    .form-button {
+        bottom: 2%;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:500px) {
+    .form-main {
+        position: absolute;
+        left: 0;
+    }
+}
+
+@media(max-width:354px) {
+    .form-button {
+        bottom: 0;
+    }
+
+    .form-link p {
+        font-size: 13px;
+    }
+
+    .input-class {
+        font-size: 12px;
+    }
+}
